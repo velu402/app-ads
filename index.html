@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Spend Note</title>
+    <meta charset="UTF-8">
+    <title>Spend Note</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Spend Note App</h1>
-  <p>Welcome to official site</p>
+
+<div class="container">
+    <h1>💸 Spend Note</h1>
+
+    <!-- Input Section -->
+    <div class="input-box">
+        <input type="text" id="desc" placeholder="Enter description...">
+        <input type="number" id="amount" placeholder="Amount ₹">
+        <button onclick="addExpense()">Add</button>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+        <h2>Total Spent: ₹ <span id="total">0</span></h2>
+    </div>
+
+    <!-- Expense List -->
+    <div class="list" id="list"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
